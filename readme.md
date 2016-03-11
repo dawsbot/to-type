@@ -1,4 +1,9 @@
 # to-type
+
+> The way typeOf should be
+
+<br>
+
 [![npm version](https://img.shields.io/npm/v/to-type.svg)](https://www.npmjs.com/package/to-type)
 [![npm download count](http://img.shields.io/npm/dm/to-type.svg?style=flat)](http://npmjs.org/to-type)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
@@ -45,17 +50,17 @@ const toType = require('to-type');
 
 toType([1, 2, 3]);
 //=> 'array'
-typeof [1, 2, 3]
+typeof [1, 2, 3];
 //=> 'object'
 
 toType(new ReferenceError());
 //=> 'error'
-typeof new ReferenceError()
+typeof new ReferenceError();
 //=> 'object'
 
 toType(/a-z/);
 //=> 'regexp'
-typeof /a-z/
+typeof /a-z/;
 //=> 'object'
 ```
 
@@ -139,7 +144,7 @@ toType({a: 4});
 toType(new Date());
 //=> 'date'
 
-toType(Math)
+toType(Math);
 //=>'math'
 
 toType(JSON);
