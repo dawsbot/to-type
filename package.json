@@ -1,7 +1,7 @@
 {
   "name": "to-type",
   "version": "0.0.0",
-  "description": "The fixed typeOf function for JavaScript",
+  "description": "The way typeOf should be",
   "license": "MIT",
   "homepage": "https://github.com/dawsonbotsford/to-type#readme",
   "repository": {
@@ -27,6 +27,9 @@
     "index.js"
   ],
   "keywords": [
+    "types",
+    "windows",
+    "typeof",
     "lean",
     "minimal",
     "documented",

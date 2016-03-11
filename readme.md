@@ -16,7 +16,7 @@
           <a href='https://travis-ci.org/dawsonbotsford/to-type'><img src='https://api.travis-ci.org/dawsonbotsford/to-type.svg?branch=master'></a>
         </td>
         <td align='center'>
-          <a href='https://ci.appveyor.com/project/dawsonbotsford/to-type'><img src='http://www.gravatar.com/avatar/5f66f56cae930eb9ab2cd9e62b8285e6'></a>
+          <a href='https://ci.appveyor.com/project/dawsonbotsford/to-type'><img src='https://ci.appveyor.com/api/projects/status/xnen769jka939d6t/branch/master?svg=true'></a>
         </td>
       </tr>
     </tbody>
@@ -24,7 +24,7 @@
 
 <br>
 
-> The fixed typeOf function for JavaScript
+> The way typeOf should be
 
 This is a node implementation of angus-c's [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/)
 
@@ -62,7 +62,7 @@ typeof /a-z/
 <br>
 
 ## About
-JavaScript's `typeOf` is broken. It has been from since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and likely always will be due to backwards compatability. It seems like nearly every call returns `object`. Don't believe me?
+JavaScript's `typeOf` is broken. It has been since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and likely always will be due to backwards compatability. It seems like nearly every call returns `object`. Don't believe me?
 
 ```js
 typeof {a: 4};
