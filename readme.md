@@ -48,24 +48,21 @@ const toType = require('to-type');
 
 toType([1, 2, 3]);
 //=> 'array'
-typeof [1, 2, 3];
-//=> 'object'
-
-toType(new ReferenceError());
-//=> 'error'
-typeof new ReferenceError();
-//=> 'object'
 
 toType(/a-z/);
 //=> 'regexp'
-typeof /a-z/;
-//=> 'object'
+
+toType(new Number(4));
+//=> 'number'
+
+toType(new String('abc'));
+//=> 'string'
 ```
 
 <br>
 
 ## About
-JavaScript's `typeOf` is broken. It has been since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and likely always will be due to backwards compatability. It seems like nearly every call returns `object`. Don't believe me?
+JavaScript's `typeOf` function sucks. It has returned vague values since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and always will be due to backwards compatibility. It seems like nearly every call returns `object`. Don't believe me?
 
 ```js
 typeof {a: 4};
@@ -83,7 +80,7 @@ typeof new Date;
 typeof /a-z/;
 //=> 'object'
 
-typeof Math;
+typeof JSON;
 //=> 'object'
 
 typeof new Number(4);
@@ -110,7 +107,7 @@ Wait, you're still not convinced?
 <br>
 
 ```js
-typeof JSON;
+typeof Math;
 //=> 'object'
 ```
 
@@ -130,7 +127,8 @@ Type: `string`
 
 ##### returns
 
-Type: `string`
+Type: `string`  
+Description: The return value is always **lowercased**.
 
 <br>
 
@@ -156,6 +154,17 @@ toType(new String('abc'));
 
 toType(new Boolean(true));
 //=> 'boolean'
+
+toType(new ReferenceError());
+//=> 'error'
+
+
+//es2015 and newer
+toType(Promise);
+//=> 'function'
+
+toType(Symbol());
+//=> 'symbol'
 ```
 
 <br>
