@@ -1,6 +1,6 @@
 # to-type
 
-> The way typeOf should be
+> The way typeof should be
 
 <br>
 
@@ -62,7 +62,7 @@ toType(new String('abc'));
 <br>
 
 ## About
-JavaScript's `typeOf` function sucks. It has returned vague values since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and always will be due to backwards compatibility. It seems like nearly every call returns `object`. Don't believe me?
+JavaScript's `typeof` function sucks. It has returned vague values since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and always will be due to backwards compatibility. It seems like nearly every call returns `object`. Don't believe me?
 
 <br>
 
