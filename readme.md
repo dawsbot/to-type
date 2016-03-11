@@ -29,8 +29,6 @@
 
 <br>
 
-> The way typeOf should be
-
 This is a node implementation of angus-c's [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/).
 
 <br>
