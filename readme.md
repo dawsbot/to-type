@@ -64,6 +64,8 @@ toType(new String('abc'));
 ## About
 JavaScript's `typeOf` function sucks. It has returned vague values since [1997](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf#sec-11.4.3) and always will be due to backwards compatibility. It seems like nearly every call returns `object`. Don't believe me?
 
+<br>
+
 ```js
 typeof {a: 4};
 //=> 'object'
@@ -94,7 +96,6 @@ typeof new String('abc');
 
 Did I hear you say that was not enough proof?
 
-<br>
 ```js
 typeof new Boolean(true);
 //=> 'object'
@@ -104,8 +105,6 @@ typeof new Boolean(true);
 
 Wait, you're still not convinced?
 
-<br>
-
 ```js
 typeof Math;
 //=> 'object'
@@ -113,7 +112,7 @@ typeof Math;
 
 <br>
 
-`to-type` fixes this by providing the types you expect to see.
+`to-type` fixes these vague outputs by returning the types you expect to see.
 
 <br>
 
