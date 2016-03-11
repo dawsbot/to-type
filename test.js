@@ -12,7 +12,8 @@ test('valid args', t => {
   }, Error);
 });
 
-test('title', t => {
+test('matches expected strings', t => {
+  // es5-
   t.is(toType('myArg1'), 'string');
   t.is(toType({}), 'object');
   t.is(toType({a: 4}), 'object');
@@ -25,4 +26,8 @@ test('title', t => {
   t.is(toType(new Number(4)), 'number');
   t.is(toType(new String('abc')), 'string');
   t.is(toType(new Boolean(true)), 'boolean');
+
+  // es2015 and newer
+  t.is(toType(Symbol()), 'symbol');
+  t.is(toType(Promise), 'function');
 });
