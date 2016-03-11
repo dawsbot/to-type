@@ -122,7 +122,7 @@ typeof Math;
 
 ##### target
 
-Type: `string`
+Type: `all types`
 
 ##### returns
 
