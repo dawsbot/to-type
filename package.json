@@ -1,0 +1,50 @@
+{
+  "name": "to-type",
+  "version": "0.0.0",
+  "description": "The fixed typeOf function for JavaScript",
+  "license": "MIT",
+  "homepage": "https://github.com/dawsonbotsford/to-type#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawsonbotsford/to-type.git"
+  },
+  "author": {
+    "name": "Dawson Botsford",
+    "email": "DawsonBotsford@gmail.com",
+    "url": "dawsonbotsford.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dawsonbotsford/to-type/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "ava": "ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "lean",
+    "minimal",
+    "documented",
+    "tested",
+    "licensed",
+    "ava",
+    "dawson"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "xo": "^0.12.1",
+    "eslint-config-xo-space": "^0.8.0"
+  },
+  "xo": {
+    "space": true,
+    "eslintConfig": {
+      "extends": "xo-space"
+    }
+  }
+}
