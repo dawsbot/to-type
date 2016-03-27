@@ -142,7 +142,7 @@ typeof Math;
 
 #### target
 
-**Type**: `string`
+Type: `all types`
 
 <br>
 
