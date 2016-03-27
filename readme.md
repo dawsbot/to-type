@@ -29,7 +29,7 @@
 
 <br>
 
-This is a JavaScript implementation of [angus-c](https://github.com/angus-c)'s [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/).
+A JavaScript implementation of [angus-c](https://github.com/angus-c)'s [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/).
 
 <br>
 
@@ -142,7 +142,7 @@ typeof Math;
 
 #### target
 
-Type: `all types`
+**Type**: `all types`
 
 <br>
 
