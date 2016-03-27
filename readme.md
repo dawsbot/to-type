@@ -29,14 +29,31 @@
 
 <br>
 
-This is a node implementation of [angus-c](https://github.com/angus-c)'s [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/).
+This is a JavaScript implementation of [angus-c](https://github.com/angus-c)'s [Fixing the JavaScript typeof operator](https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/).
 
 <br>
 
 ## Install
 
+#### Node
+
 ```
 npm install --save to-type
+```
+<br>
+
+#### Web
+
+```html
+<script src="https://rawgit.com/dawsonbotsford/to-type/master/bundle.js"></script>
+```
+
+<br>
+
+Alternatively, you can install the npm module and reference the bundle within `node_modules`
+
+```html
+<script src="<path to node_modules>/to-type/bundle.js"></script>
 ```
 
 <br>
@@ -44,7 +61,8 @@ npm install --save to-type
 ## Usage
 
 ```js
-const toType = require('to-type');
+// Remove this require line if you're using the web bundle (it's already bundled as "to-type")
+const to-type = require('to-type');
 
 toType([1, 2, 3]);
 //=> 'array'
@@ -120,14 +138,19 @@ typeof Math;
 
 ### toType(target)
 
-##### target
+<br>
 
-Type: `string`
+#### target
 
-##### returns
+**Type**: `string`
 
-Type: `string`  
-Description: The return value is always **lowercased**.
+<br>
+
+#### returns
+
+**Type**: `string`
+
+**Description**: The return value is always **lowercased**.
 
 <br>
 
