@@ -25,7 +25,8 @@
     "precommit": "npm run bundle"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "types",
